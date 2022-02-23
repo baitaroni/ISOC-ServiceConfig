@@ -1,0 +1,5 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: management_registration_access_service
