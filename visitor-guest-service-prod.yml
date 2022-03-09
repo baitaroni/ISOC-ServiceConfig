@@ -1,10 +1,10 @@
 server:
-  port: 8080
+  port: ${PORT:0}
 
 ## Spring information
 spring:
   application:
-    name: registration-access-service
+    name: visitor-guest-service
   config:
     import:
       - optional:configserver:http://localhost:8012/
@@ -32,10 +32,7 @@ management:
 ## Service information
 info:
   app:
-    name: Registration and access service
-    description: Registration and access management
+    name: Visitor and guest service
+    description: Visitor and guest management
     version: 1.0.0
-    env: "DEFAULT"
-
-registration-access-service:
-  msg: "From DEFAULT env"
+    env: "PROD"

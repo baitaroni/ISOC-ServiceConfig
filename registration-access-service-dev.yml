@@ -1,8 +1,41 @@
 server:
   port: 8080
+
+## Spring information
 spring:
   application:
     name: registration-access-service
+  config:
+    import:
+      - optional:configserver:http://localhost:8012/
+
+## Eureka information
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:8071/eureka/
+
+## Actuator end point and app information
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    shutdown:
+      enabled: true
+
+## Service information
+info:
+  app:
+    name: Registration and access service
+    description: Registration and access management
+    version: 1.0.0
+    env: "DEFAULT"
 
 registration-access-service:
   msg: "From DEV env"

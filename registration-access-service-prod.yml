@@ -38,4 +38,4 @@ info:
     env: "DEFAULT"
 
 registration-access-service:
-  msg: "From DEFAULT env"
+  msg: "From PRD env"

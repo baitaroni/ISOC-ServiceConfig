@@ -9,3 +9,7 @@ eureka:
     register-with-eureka: false
     service-url:
       defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+
+#server specific messages
+eureka-server:
+  msg: "From Eureka DEFAULT env"
