@@ -36,6 +36,7 @@ info:
     description: Visitor and guest management
     version: 1.0.0
     env: "DEFAULT"
-#visitor-guest-service:
-#msg: "from test env"
-#build-version: 1.0
+
+visitor-guest-service:
+  msg: "from test env"
+  build-version: 1.0
