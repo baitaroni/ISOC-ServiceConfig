@@ -36,7 +36,6 @@ info:
     description: Visitor and guest management
     version: 1.0.0
     env: "PROD"
-
-visitor-guest-service:
-  msg: from prod env
-  build-version: 1.0
+#visitor-guest-service:
+#msg: "from prod env"
+#build-version: 1.0

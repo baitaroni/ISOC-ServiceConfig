@@ -36,3 +36,7 @@ info:
     description: Visitor and guest management
     version: 1.0.0
     env: "DEV"
+
+visitor-guest-service:
+  msg: "from dev env"
+  build-version: 1.0
